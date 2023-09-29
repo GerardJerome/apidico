@@ -18,7 +18,7 @@ public class ConsumingRestApplication {
 		SpringApplication.run(ConsumingRestApplication.class, args);
 	}
 
-	@Bean
+	/*@Bean
 	public RestTemplate restTemplate(RestTemplateBuilder builder) {
 		return builder.build();
 	}
@@ -26,9 +26,9 @@ public class ConsumingRestApplication {
 	@Bean
 	public CommandLineRunner run(RestTemplate restTemplate) throws Exception {
 		return args -> {
-			Quote quote = restTemplate.getForObject(
-					"http://localhost:8080/api/random", Quote.class);
-			log.info(quote.toString());
+			String quote = restTemplate.getForObject(
+					"https://api.dictionaryapi.dev/api/v2/entries/en/car", String.class);
+			log.info(quote.toString().split("definition" )[2].replace(":","").replace("\"","").split("\\.")[0]);
 		};
-	}
+	}*/
 }
