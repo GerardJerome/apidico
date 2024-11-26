@@ -1,0 +1,4 @@
+com.example.consumingrest.ConsumingRestApplication#main([Ljava/lang/String;)V
+false
+d178811b20a3b32399d73bc9ed8c3fa6
+org.springframework.boot.SpringApplication#run(Ljava/lang/Class;[Ljava/lang/String;)Lorg/springframework/context/ConfigurableApplicationContext;

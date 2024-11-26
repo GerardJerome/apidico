@@ -1,0 +1,16 @@
+com.example.consumingrest.repo#getDefinition(Ljava/lang/String;)Ljava/lang/String;
+false
+744e20a64bd0eda4e9ab6582ca437df6
+java.lang.String#replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+java.lang.String#split(Ljava/lang/String;)[Ljava/lang/String;
+okhttp3.OkHttpClient#<init>()V
+okhttp3.OkHttpClient#instance-init#
+okhttp3.Request$Builder#<init>()V
+okhttp3.Request$Builder#instance-init#
+okhttp3.Response#body()Lokhttp3/ResponseBody;
+okhttp3.ResponseBody#string()Ljava/lang/String;
+==
+build okhttp3.Request$Builder#build()Lokhttp3/Request;
+execute okhttp3.Call#execute()Lokhttp3/Response;
+newCall okhttp3.OkHttpClient#newCall(Lokhttp3/Request;)Lokhttp3/Call;
+url okhttp3.Request$Builder#url(Ljava/lang/String;)Lokhttp3/Request$Builder;
