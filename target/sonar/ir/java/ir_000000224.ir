@@ -1,0 +1,65 @@
+
+c
+getDefinitionRcom.example.consumingrest.repo#getDefinition(Ljava/lang/String;)Ljava/lang/String;Î"\\."java.lang.String""java.lang.StringH	2"https://api.dictionaryapi.dev/api/v2/entries/en/"java.lang.String"\""java.lang.String""definition"java.lang.String":"java.lang.String
+0int
+2int2this   ( "com.example.consumingrest.repo$word !  (K"java.lang.String2this   ( "com.example.consumingrest.repo$word !  (K"java.lang.String"öJ
+H
+! !(0client"
+#new-object##new-object#2okhttp3.OkHttpClientK
+I
+! !(0"6
+#instance-init##okhttp3.OkHttpClient#instance-init#*8=
+;
+! !(0"(
+<init>okhttp3.OkHttpClient#<init>()V*8E
+C
+" "(/"
+#new-object##new-object#2okhttp3.Request$BuilderN
+L
+" "(/"9
+#instance-init#&okhttp3.Request$Builder#instance-init#*8@
+>
+" "(/"+
+<init>!okhttp3.Request$Builder#<init>()V*8*
+(
+# #(N
+"
+	#binop +#	#binop +#*	€
+~
+" #(O"Q
+urlHokhttp3.Request$Builder#url(Ljava/lang/String;)Lokhttp3/Request$Builder; *
+2okhttp3.Request$Builder8j
+h
+" $(request";
+build0okhttp3.Request$Builder#build()Lokhttp3/Request; *2okhttp3.Request8t
+r
+% %(+call"J
+newCall=okhttp3.OkHttpClient#newCall(Lokhttp3/Request;)Lokhttp3/Call; *2okhttp3.Call8f
+d
+& &(*response"5
+execute(okhttp3.Call#execute()Lokhttp3/Response; *2okhttp3.Response8`
+^
+' '("5
+body-okhttp3.Response#body()Lokhttp3/ResponseBody;*2okhttp3.ResponseBody8`
+^
+' '('"9
+string/okhttp3.ResponseBody#string()Ljava/lang/String;*2java.lang.String8r
+p
+' '(<"H
+split=java.lang.String#split(Ljava/lang/String;)[Ljava/lang/String;(*2java.lang.String[]80
+.
+' '(?"
+#array-read##array-read#*“
+
+' '(O"i
+replace\java.lang.String#replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;(*2java.lang.String8“
+
+' '(`"i
+replace\java.lang.String#replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;(*2java.lang.String8r
+p
+' '(m"H
+split=java.lang.String#split(Ljava/lang/String;)[Ljava/lang/String;(*2java.lang.String[]80
+.
+' '(p"
+#array-read##array-read#*
+' '(q*KC:/cours/apidico/complete/src/main/java/com/example/consumingrest/repo.java
